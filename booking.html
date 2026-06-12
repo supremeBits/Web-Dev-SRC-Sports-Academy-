@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Online | SRC SPORT ACADEMY</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pQ8vV6XWt1lYvR2zft0cF7D9+KQwQlK2N5K40WYiX/2TjN1xQrXW6XrD1W7n8Zx3N5f1vHIjGjkK8VdPb5xW0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">SRC SPORT ACADEMY</a>
+      <button class="nav-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav id="navbar" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="activities.html">New Activities</a>
+        <a href="booking.html">Book Online</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button" href="booking.html">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-intro">
+          <p>Book training sessions and community slots with our accessible online form.</p>
+          <h2>Online Booking</h2>
+        </div>
+
+        <form class="booking-form" aria-label="Booking form">
+          <div class="grid grid-2 form-grid">
+            <div class="field-group">
+              <label for="booking-name">Name</label>
+              <input id="booking-name" type="text" required />
+            </div>
+            <div class="field-group">
+              <label for="booking-email">Email</label>
+              <input id="booking-email" type="email" required />
+            </div>
+            <div class="field-group">
+              <label for="booking-sport">Sport</label>
+              <select id="booking-sport" required>
+                <option value="">Choose sport</option>
+                <option>Football</option>
+                <option>Rugby</option>
+                <option>Volleyball</option>
+                <option>Table Tennis</option>
+                <option>Gymnastics</option>
+                <option>Wrestling</option>
+                <option>Taekwondo</option>
+                <option>Judo</option>
+                <option>Handball</option>
+                <option>Ballet</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="booking-date">Preferred Date</label>
+              <input id="booking-date" type="date" required />
+            </div>
+            <div class="field-group">
+              <label for="booking-time">Preferred Time</label>
+              <input id="booking-time" type="time" required />
+            </div>
+            <div class="field-group">
+              <label for="booking-message">Special Requests</label>
+              <textarea id="booking-message" placeholder="Tell us about your experience or training goals"></textarea>
+            </div>
+          </div>
+
+          <p class="form-note">Please use the form above to send an email-based booking request. Our team will confirm by email within 24 hours.</p>
+          <button class="primary-button" type="submit">Submit Booking Request</button>
+          <div class="form-message" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Booking Help</h3>
+        <p>Use the booking form to reserve training slots and community sessions whenever you are ready.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="events.html">Events</a>
+      </nav>
+      <div>
+        <p>Need assistance?</p>
+        <p>booking@srcsportsacademy.com</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-3gJwYp5Gg8Aw2yCnpdCwF9R4FGO//gI4C6rqU/0iEow=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

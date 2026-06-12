@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRC SPORT ACADEMY</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pQ8vV6XWt1lYvR2zft0cF7D9+KQwQlK2N5K40WYiX/2TjN1xQrXW6XrD1W7n8Zx3N5f1vHIjGjkK8VdPb5xW0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">SRC SPORT ACADEMY</a>
+      <button class="nav-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav id="navbar" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="activities.html">New Activities</a>
+        <a href="booking.html">Book Online</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button" href="booking.html">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/sports.mp4" type="video/mp4" />
+      </video>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Train. Compete. Win.</h1>
+          <p>Join SRC Sports Academy today.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="highlights-heading">
+      <div class="container">
+        <div class="section-intro">
+          <h2 id="highlights-heading">Programs & Highlights</h2>
+          <p>Explore a growing roster of sports, community engagement programs, and academy achievements.</p>
+        </div>
+
+        <div class="highlight-grid searchable">
+          <a href="activities.html">
+            <h4>New Sports Programs</h4>
+            <p>Wrestling, Taekwondo, Judo, and Volleyball are now available for students and community athletes.</p>
+          </a>
+          <a href="booking.html">
+            <h4>Booking System</h4>
+            <p>Schedule training sessions easily with our accessible online booking form and email-based confirmation.</p>
+          </a>
+          <a href="blog.html">
+            <h4>Community Blog</h4>
+            <p>Read updates from coaches, see match reports, and follow the academy's latest achievements.</p>
+          </a>
+        </div>
+
+        <div class="visitor-panel" aria-live="polite">
+          <div>
+            <strong>Visitor Counter</strong>
+            <p>Welcome back! You are visitor #<span class="visit-count">0</span>.</p>
+          </div>
+          <div>
+            <strong>Accessibility</strong>
+            <p>ARIA labels, keyboard navigation, and form validation support make the site accessible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sport-heading">
+      <div class="container">
+        <div class="section-intro">
+          <h2 id="sport-heading">All Sports Offered</h2>
+          <p>Our academy currently offers popular and emerging programs for athletes with diverse interests.</p>
+        </div>
+
+        <div class="featured-sports searchable">
+          <article class="sport-football">
+            <h3>Football</h3>
+            <p>Team strategies, fitness, and league-level championship preparation.</p>
+          </article>
+          <article class="sport-rugby">
+            <h3>Rugby</h3>
+            <p>Power, agility, and disciplined team training for university competition.</p>
+          </article>
+          <article class="sport-ballet">
+            <h3>Ballet</h3>
+            <p>Artistic movement and balance training that strengthens flexibility and core control.</p>
+          </article>
+          <article class="sport-table-tennis">
+            <h3>Table Tennis</h3>
+            <p>Speed, precision, and reflex training with both recreational and competitive practice.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="media-heading">
+      <div class="container">
+        <div class="section-intro">
+          <h2 id="media-heading">Embedded Media Coverage</h2>
+          <p>Watch a highlight reel from sports events and academy coverage from external sources.</p>
+        </div>
+
+        <div class="media-container">
+          <div class="iframe-wrap" aria-label="Olympics highlight video">
+            <iframe 
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="card">
+            <h3>News Feature</h3>
+            <p>Recent coverage highlights our academy's contribution to sports development and local talent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>SRC SPORT ACADEMY</h3>
+        <p>Modern sports development for university students and the surrounding community.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="events.html">Events</a>
+      </nav>
+      <div>
+        <p>Follow us</p>
+        <div class="social-links" aria-label="Social sites">
+          <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-3gJwYp5Gg8Aw2yCnpdCwF9R4FGO//gI4C6rqU/0iEow=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* ===== PREMIUM GRAY THEME ===== */
+:root {
+  --bg-main: #0f1115;
+  --bg-secondary: #1a1d23;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1aa;
+
+  --accent: #d1d5db; /* soft silver */
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(15, 17, 21, 0.7);
+  border-bottom: 1px solid var(--border);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text-secondary);
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--text-primary);
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  position: relative;
+}
+
+/* dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.9)
+  );
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+/* text above overlay */
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  color: var(--text-secondary);
+  margin: 15px 0;
+}
+
+/* ===== HERO VIDEO ===== */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* ===== BUTTON (GLASS STYLE) ===== */
+button {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  padding: 12px 25px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+button:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+
+/* ===== PRIMARY CTA ===== */
+.book-btn {
+  background: linear-gradient(135deg, #d1d5db, #9ca3af);
+  color: #000;
+  border: none;
+}
+
+.book-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 80px 10%;
+}
+
+/* ===== CARDS (GLASSMORPHISM) ===== */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ===== INPUTS ===== */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  color: var(--text-primary);
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--text-secondary);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0a0c10;
+  padding: 40px 10%;
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  color: var(--text-secondary);
+}
+
+/* ===== VIDEO ===== */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== SMOOTH ANIMATION ===== */
+* {
+  transition: all 0.25s ease;
+}
